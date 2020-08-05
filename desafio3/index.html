@@ -1,0 +1,78 @@
+<!--Utilizando HTML, CSS y las propiedades aprendidas de posicionamiento y, dibuja las siguientes banderas: España, Dinamarca, Emiratos Arabes, Japon-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Ejercicio 3</title>
+	
+	<style media="screen" type="text/css">
+		.col-12{width: 100%;}
+		.col-10{width: 83%;}
+		.col-8{width: 66.4%;}
+		.col-6{width: 50%;}
+		.col-4{width: 33.3%;}
+		.col-3{width: 25%;}
+		.col-2{width: 16.6%;}
+		.d-flex{display: flex;}
+
+		.bandera{border: solid 1px #000; height: 150px; width:230px;position: relative;}
+		.bandera-name h1{text-align: center;font-size: 15px;}
+		.bandera-block{margin: 5px;}
+		/*españa*/
+		.bg-bandera1{background-color: red;height: 100%;width: 100%;position: relative;}
+		.linea1-bandera1{background-color: yellow;height: 40%;width: 100%;position: absolute;bottom: 33%;}
+		
+		.linea1-bandera2{background-color: #fff;width: 100%;height: 20px;position: absolute;top: 45%}
+		.linea2-bandera2{background-color: #fff;width: 20px;height: 100%;position: absolute;top: 0%;left: 33%;}
+
+		.linea1-bandera3{background-color: green;width: 100%;height: 33%;position: absolute;top: 0%;left: 0%}
+		.linea3-bandera3{background-color: #000;width: 100%;height: 33%;position: absolute;bottom: 0%;left: 0%;}
+		.linea4-bandera3{background-color: red;width: 25%;height: 100%;position: absolute;top: 0%;left: 0px;z-index: 2;}
+
+		.linea1-bandera4{background-color: red;width: 70px;height: 70px;position: absolute;top: 25%;left: 35%;z-index: 2;border-radius: 50%;}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="col-12 d-flex">
+			<div class="bandera-block">
+				<div class="bandera">
+					<div class="bg-bandera1"></div>
+					<div class="linea1-bandera1"></div>
+				</div>
+				<div class="bandera-name">
+					<h1>España</h1>
+				</div>
+			</div>
+			<div class="bandera-block">
+				<div class="bandera">
+					<div class="bg-bandera1"></div>
+					<div class="linea1-bandera2"></div>
+					<div class="linea2-bandera2"></div>
+				</div>
+				<div class="bandera-name">
+					<h1>Dinamarca</h1>
+				</div>
+			</div>
+			<div class="bandera-block">
+				<div class="bandera">
+					<div class="linea1-bandera3"></div>
+					<div class="linea3-bandera3"></div>
+					<div class="linea4-bandera3"></div>
+				</div>
+				<div class="bandera-name">
+					<h1>Emiratos Arabes</h1>
+				</div>
+			</div class="bandera-block">
+			<div class="bandera-block">
+				<div class="bandera">
+					<div class="linea1-bandera4"></div>
+				</div>
+				<div class="bandera-name">
+					<h1>Japon</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
