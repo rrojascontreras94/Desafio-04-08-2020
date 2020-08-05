@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 6</title>
+
+	<!-- El objetivo es posicionar el ribbon de despacho en 48 horas en la esquina inferior derecha de la foto del producto. -->
+
+	<style media="screen" type="text/css">
+		
+		body {margin: 0;padding: 0;}
+		section{width: 100%}
+		.product{width: 240px; margin: 50px auto;border: 1px solid rgba(0,0,0,0.1);padding: 10px}
+		.images-container{width: 240px;height: 280px;position: relative;border: solid 1px rgba(0,0,0,0.1);}
+		.product-image{position: relative;z-index: 1;width: 100%;height: 100%;}
+		.offer-label{position: absolute;bottom: 20px;z-index: 2;width: 70px;right: 20px;}
+		.text-label p{text-align: center;}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="product">
+			<div class="images-container">
+				<img src="ejercicio-6-product.png" class="product-image" alt="Product">
+				<img src="ejercicio-6_ribbon.png" class="offer-label" alt="Offer">
+			</div>
+			<div class="text-label">
+				<p>Energy Extra Bateria 1000 Mah</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
