@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1</title>
+	<style media="screen" type="text/css">
+	/*a) Agregar 4 cajas distribuidas horizontalmente la clase .box , con un width de 25% y padding de 5px y luego evita el desborde de los elementos recalculando los elementos.*/
+	
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.main {
+			margin: 5px;
+		}
+		.box {
+			border: 2px solid #808080;
+			height: 100px;
+			padding: 5px
+		}
+		.col-12{width: 100%;}
+		.col-10{width: 83%;}
+		.col-8{width: 66.4%;}
+		.col-6{width: 50%;}
+		.col-4{width: 33.3%;}
+		.col-3{width: 25%;}
+		.col-2{width: 16.6%;}
+		.d-flex{display: flex;}
+		.over-content{overflow: hidden;height: fit-content;}
+	</style>
+</head>
+<body>
+	<section class="main">
+		<section class="d-flex over-content">
+			<div class="col-3 box">
+			</div>
+			<div class="col-3 box">
+			</div>
+			<div class="col-3 box">
+			</div>
+			<div class="col-3 box">
+			</div>
+		</section>
+	</section>
+</body>
+</html>
